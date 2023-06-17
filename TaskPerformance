@@ -1,1 +1,36 @@
-
+package ashleygallamoza;
+import java.util.*;
+public class TaskPerformance {
+    public static void main(String[] args) {
+            
+        Scanner ashley = new Scanner (System.in);
+            
+        System.out.println("Triangular Prism 1");
+               System.out.print("Length: ");
+        int Length = ashley.nextInt();
+               System.out.print("Base: ");
+               int Base = ashley.nextInt();
+                  System.out.print("Height: ");
+                  int Height = ashley.nextInt();
+        double volume = Length * (0.5*Base*Height);
+        System.out.println(" The volume of the triangular prism is  " +volume);
+        
+        System.out.println("Triangular Prism 2");
+               System.out.print("Length1: ");
+        double Length1 = ashley.nextDouble();
+               System.out.print("Base1: ");
+               double Base1 = ashley.nextDouble();
+                  System.out.print("Height1: ");
+                  double Height1 = ashley.nextDouble();
+        double volume1 = Length1 * (0.5*Base1*Height1);
+        System.out.println(" The volume of the triangular prism is  " +volume1);
+        if (volume>volume1) {
+            System.out.println("The volume is Bigger"); }
+            else if (volume<volume1) {
+                    System.out.println("The volume is Lesser");
+                    }
+            else {
+                    System.out.println("The voulme is equal.");
+            }
+    }
+}
